@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import districts, { getDevScore, getScoreColor } from '../data/districts';
+import districts, { getDevScore} from '../data/districts';
 import { fmtPop } from '../utils/helpers';
 
 const METRICS = [
