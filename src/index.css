@@ -185,6 +185,8 @@ body{font-family:'Inter',sans-serif;background:#f5f0e8;color:#2C2C2A}
    ══════════════════════════════════════════════════════════════════════════ */
 
 /* ── Tablet (768px - 1024px) ─────────────────────────────────────────────── */
+
+
 @media (max-width: 1024px) {
   .sidebar      { width: 160px; }
   .stats-panel  { width: 230px; }
@@ -193,6 +195,16 @@ body{font-family:'Inter',sans-serif;background:#f5f0e8;color:#2C2C2A}
   .search-box   { width: 150px; }
   .nav-pill     { font-size: 10px; padding: 4px 9px; }
   .kpi-value    { font-size: 17px; }
+}
+.map-container {
+  width: 100%;
+  height: 100%;
+  outline: none; /* Removes the blue border when clicking the map */
+}
+
+/* Ensure Leaflet controls don't overlap with your sidebar on small screens */
+.leaflet-top.leaflet-right {
+  margin-top: 10px;
 }
 
 /* ── Mobile (max 768px) ──────────────────────────────────────────────────── */
