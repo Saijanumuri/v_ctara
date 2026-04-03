@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import districts, { getDevScore, getScoreColor } from '../data/districts';
-import { getLayerVal, layerColor, fmtPop } from '../utils/helpers';
+import { getLayerVal, layerColor } from '../utils/helpers';
 
 export default function MapView({
   onSelect, selected, activeLayer, stateFilter, compareA, compareB
@@ -96,7 +96,7 @@ export default function MapView({
         easeLinearity: 0.25 
       });
     }
-  }, [selected]);
+  }, [selected,onSelect]);
 
   return (
     <div className="map-area">
